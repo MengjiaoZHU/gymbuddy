@@ -1,0 +1,309 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Free Gym Website Template | About :: w3layouts</title>
+<link href="static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="static/css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="static/js/liquidFillGauge.js" language="JavaScript"></script>
+    <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+    </style>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="static/js/jquery.min.js"></script>
+<!-- grid-slider -->
+<script type="text/javascript" src="static/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="static/js/jquery.contentcarousel.js"></script>
+<!-- //grid-slider -->
+<!---calender-style---->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<!---//calender-style---->				  
+</head>
+<body>
+<!-- start header_bottom -->
+	  	<!-- start menu -->
+    <div class="menu" id="menu">
+	  <div class="container">
+		 <div class="logo">
+			<a href="index.html"><img src="static/images/logo0.png" border="0" alt=""/></a>
+		 </div>
+		 <div class="h_menu4"><!-- start h_menu4 -->
+		   <a class="toggleMenu" href="#">Menu</a>
+			 <ul class="nav">
+			   <li class="active"><a href="index.html">Home</a></li>
+			   <li><a href="about.html">Profile</a></li>
+			   <li><a href="trainers.html">Schedule</a></li>
+			   <!-- <li><a href="classes.html">Classes</a> -->
+			   	
+			   </li>
+			   	<li><a href="{{ url_for('blog') }}">News Feed</a></li>
+
+<!-- 			   <li><a href="blog.html">News Feed</a></li>
+ -->			   <!-- <li><a href="pricing.html">Schedule</a></li> -->
+			   <li><a href="contact.html">Sign Up</a></li>
+
+			   <img src="static/images/unreadMsg.png" style="display:block"  onclick="alertMsg()"></button>
+				 	<script type="text/javascript">
+				 		function alertMsg() {
+				 			var r=confirm("Your previous classmate Mengjiao just joined boxing class! Your GymBuddy Intimacy is enhanced! Do you want to say HI to her?");
+				 			if(r==true){
+								window.location.href='contact.html';
+				 			}
+				 		}
+				 	</script>
+			 </ul>
+			  <script type="text/javascript" src="static/js/nav.js"></script>
+		  </div><!-- end h_menu4 -->
+		 <div class="clear"></div>
+	  </div>
+	</div>
+	<!-- end menu -->
+		 <div class="clear"></div>
+	  </div>
+	</div>
+	<div class="main">
+      	 <div class="about-wrapper">
+      	    <div class="container">
+		       <div class="row about-top">
+				 <div class="col-md-5">
+				  <img src="static/images/Shanshan.jpg" style="width:200px;height:250px;" /> 
+			     </div>
+				 <div class="col-md-7 about-left-text">
+				 	<h2> Shanshan Zhang</h2>
+				   <h3> &nbsp &nbsp &nbsp &nbsp New to the gym! Love Yoga and Pilates</h3>
+				 </div>
+				 <div class = "col-md-7 newMsg" align="center">
+				 	<br>
+				 
+				 </div>
+                 <div class="clear"></div>	
+               </div>
+		    </div>
+	      </div>
+	      <div class="container">
+	       <div class="about_trainer">
+		      <div class="row about_box">
+		      	<div class="col-md-4">
+		      	<div class="login-page-up-bottle">
+		      	<div class="title"><br>
+		      	<h3 class="m_2">My Gymbuddy Bottle</h3><hr></div>
+			      	<div class="bottles" style="display: inline">
+					<svg id="fillgauge1" width="60%" height="60" ></svg>
+					<script language="JavaScript">
+					    var gauge1 = loadLiquidFillGauge("fillgauge1", 66);
+					    var config1 = liquidFillGaugeDefaultSettings();
+					    config1.circleColor = "#FF7777";
+					    config1.textColor = "#FF4444";
+					    config1.waveTextColor = "#FFAAAA";
+					    config1.waveColor = "#FFDDDD";
+					    config1.circleThickness = 0.2;
+					    config1.circleFillGap = 0.2;
+					    config1.textVertPosition = 0.2;
+					    config1.waveAnimateTime = 2000;
+					    config1.waveHeight = 0.3;
+
+					    function NewValue(){
+					        if(Math.random() > .5){
+					            return Math.round(Math.random()*100);
+					        } else {
+					            return (Math.random()*100).toFixed(1);
+					        }
+					    }
+					</script>
+			      	</div>
+		      	</div>
+		      	<div class="login-page">
+		      		<div class="title"><br>
+		      		<h3 class="m_2">My Posts</h3><hr></div>
+		      		<!-- <br> -->
+					  <div class="box1">
+					  	<div class="box1_left">
+	 					  <!-- <img src="images/Shanshan.jpg" class="img-responsive" alt=""/>				  		 -->
+						  <div class="desc1">
+							<h3>Monday, 11/07/2016 <br><span class="m_text">11:45:20 am</span></h3>
+							<div class="clear"></div>
+						 </div>
+						</div>
+						<div class="box1_right">
+						<h4>Just finish my boxing class taught by Trainer Lemar, he is so amazing!!!</h4>
+					    </div>
+					    <p></p>
+					    <div class="coursel_list">
+								<i class="a_heart"> </i>
+								<i class="like1"> </i>33
+							</div>
+					   <div class="clear"></div>
+					  </div>
+				<!-- <br> -->
+						<hr>
+					 <div class="box1">
+					  	<div class="box1_left">
+						  <div class="desc1">
+							<h3>Thursday, 11/03/2016 <br><span class="m_text">06:32:12 pm</span></h3>
+							<div class="clear"></div>
+						 </div>
+						</div>
+						<div class="box1_right">
+						<h4>Feel energitic today! I love sweating</h4>
+					    </div>
+					    <p></p>
+					    <div class="coursel_list">
+								<i class="a_heart"> </i>
+								<i class="like1"> </i>14
+							</div>
+					   <div class="clear"></div>
+					  </div>
+					  <!-- <br> -->
+					  <hr>
+					 <div class="box1">
+					  	<div class="box1_left">
+						  <div class="desc1">
+							<h3>Tuesday, 11/01/2016 <br><span class="m_text">09:33:19 am</span></h3>
+							<div class="clear"></div>
+						 </div>
+						</div>
+						<div class="box1_right">
+						<h4>Hello, I am a new gym buddy here! Wish I could make more friends here!</h4>
+					    </div>
+					    <p></p>
+					    <div class="coursel_list">
+								<i class="a_heart"> </i>
+								<i class="like1"> </i>15
+						</div>
+					   <div class="clear"></div>
+					  </div>
+					  	<br>
+				</div>
+				</div>
+		    	 <div class = "col-md-8" style="overflow:auto; display:inline-block;">
+		     	<div class="login-page-up">
+		     	<div class="title">
+		     	<br>
+		     	<h3 class="mm1">My Class Schedule</h3>
+		     	<hr></div>
+<!-- 		     	<div class="calendar" >
+		     	<div class="p-ww">
+					  <form>
+					   <input class="date" id="datepicker" type="text" value="View Calender" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'View Calender';}">
+					  </form>
+				     </div>
+			         <div class="clear"></div>
+			         <!---strat-date-piker---->
+	<!-- 			  <script src="js/jquery-ui.js"></script>
+				  <script>
+				  $(function() {
+				    $( "#datepicker" ).datepicker();
+				  });
+				  </script>
+				  </div>
+				 <br> --> 
+				 <div class="classes">
+			     	<p> <li><h4> Monday&nbsp &nbsp &nbsp 10:00 am -- 11:30 am &nbsp &nbsp &nbsp Yoga &nbsp &nbsp Room 201 &nbsp &nbsp &nbsp <a href="https://www.mysportsclubs.com/classes/1959320-cycling-45-min"><image src="static/images/Info.png"></image></a> &nbsp &nbsp <button class="checkIn" type="button" onclick="increase()"> CHECK IN </button>
+			     	
+			     	<script type="text/javascript">
+			     		function increase(){
+			     		var gauge1 = loadLiquidFillGauge("fillgauge1", 71);
+					    var config1 = liquidFillGaugeDefaultSettings();
+					    config1.circleColor = "#FF7777";
+					    config1.textColor = "#FF4444";
+					    config1.waveTextColor = "#FFAAAA";
+					    config1.waveColor = "#FFDDDD";
+					    config1.circleThickness = 0.2;
+					    config1.circleFillGap = 0.2;
+					    config1.textVertPosition = 0.2;
+					    config1.waveAnimateTime = 2000;
+					    config1.waveHeight = 0.3;
+
+					    function NewValue(){
+					        if(Math.random() > .5){
+					            return Math.round(Math.random()*100);
+					        } else {
+					            return (Math.random()*100).toFixed(1);
+					        }
+					    }
+			     		}
+			     		</script>
+
+			     	</h4></li></p>
+		     		<hr class="classes hr">
+			     	<li><h4>Thursday &nbsp &nbsp 6:00 pm --  7:00 pm &nbsp &nbsp &nbsp Cycling &nbsp &nbsp Room 304 &nbsp &nbsp <a href="https://www.mysportsclubs.com/classes/1959281-cycling-45-min"><image src="static/images/Info.png"></image></a> &nbsp &nbsp
+					<button class="checkIn" type="button" onclick="increase()"> CHECK IN </button>
+			     	</h4></li>
+		     	</div>
+		     	</div>
+	     	    <div class = "login-page right_graph">
+	     	    <div class="title">
+	     	    <br>
+	     	    	<h3 class="mm1">My GymBuddies</h3><hr></div>
+
+	     	    	<script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+				  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+				  <script src="static/js/index.js"></script>
+				  <style>
+				    .bubbleChart {
+				      min-width: 400px;
+				      max-width: 500px;
+				      height: 350px;
+				      margin: 0 auto;
+				    }
+				    .bubbleChart svg{
+				      background: #fff;
+				    }
+				  </style>
+				<div class="bubbleChart"/>
+    			</div>
+    			</div>
+		   </div>
+	    </div>
+
+
+	       <div class="clear"></div>
+	       </div>
+		  </div>
+		 </div>
+		  <div class="footer-bottom">
+					<div class="f-logo">
+						<img src="static/images/logo0.png" alt=""/>
+					</div>
+				<div class="clear"></div>
+		 </div>
+		 <div class="copyright">
+		  <div class="container">
+		    <div class="copy">
+		    </div>
+		    <div class="social">	
+			   <ul>	
+				  <li class="facebook"><a href="#"><span> </span></a></li>
+				  <li class="twitter"><a href="#"><span> </span></a></li>
+				  <li class="pinterest"><a href="#"><span> </span></a></li>	
+				  <li class="google"><a href="#"><span> </span></a></li>
+				  <li class="tumblr"><a href="#"><span> </span></a></li>
+				  <li class="instagram"><a href="#"><span> </span></a></li>	
+				  <li class="rss"><a href="#"><span> </span></a></li>							
+			   </ul>
+		    </div>
+		   <div class="clear"></div>
+		  </div>
+	     </div>
+</body>
+</html>
